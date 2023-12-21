@@ -1,214 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chime</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <div class="chime-logo">
-            <div class="logo"></div>
-        </div>
-        <div class="benefits feature2"><a href="http://">Benefits</a></div>
-        <div class="accounts feature2"><a href="http://">Accounts</a></div>
-        <div class="who-we-are feature2"><a href="http://">Who We are</a></div>
-        <div class="learn feature2"><a href="http://">Learn</a></div>
-        <div class="space"></div>
-        <div class="login feature2"><a href="http://">Login</a></div>
-        <div class="button-box"><button class="sign-up">Sign Up</button></div>
-    </div>
-    <div class="hero-section">
-        <div class="hero-section-content">
-            <div class="hero-section-content-1">The #1 most loved
-                <br> banking app™
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>chime</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            
+            .popup {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 20px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+                transition: 5s ease-in-out;
+                box-shadow: 0px 0px 8000px 6000px rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="chime-logo">
+                <div class="logo"></div>
             </div>
-           <div class="hero-section-content-2">
-            <input type="text" placeholder="  Enter your email">
-            <button>Sign Up</button>
-           </div>
-           <br>
-         <p>Already have an account? 
-             <br>
-             <br> Learn how we collect and use your information by visiting our Privacy Notice
-             <br>
-             <br>
-            Chime is a financial technology company, not a bank. Banking services provided by 
-            <br> The Bancorp Bank, N.A. or Stride Bank, N.A.; Members FDIC</p>
+            <div class="benefits feature2"><a href="http://">Benefits</a></div>
+            <div class="accounts feature2"><a href="http://">Accounts</a></div>
+            <div class="who-we-are feature2"><a href="http://">Who We
+                    are</a></div>
+            <div class="learn feature2"><a href="http://">Learn</a></div>
+            <div class="space"></div>
+            <div class="login feature2"><a href="http://">Login</a></div>
+            <div class="button-box"><button class="sign-up">Sign
+                    Up</button></div>
         </div>
-    </div>
+        <div class="hero-section">
+            <div class="hero-section-content">
+                <div class="hero-section-content-1">The #1 most loved
+                    <br> banking app™
+                </div>
+                <div class="hero-section-content-2">
+                    <input type="text" placeholder="  Enter your email">
+                    <button>Sign Up</button>
+                </div>
+                <br>
+                <p>Already have an account?
+                    <br>
+                    <br> Learn how we collect and use your information by
+                    visiting our Privacy Notice
+                    <br>
+                    <br>
+                    Chime is a financial technology company, not a bank. Banking
+                    services provided by
+                    <br> The Bancorp Bank, N.A. or Stride Bank, N.A.; Members
+                    FDIC</p>
+            </div>
+        </div>
         <div class="grey-box"></div>
-    <div class="below-hero-section">
-        <br>
-        <br>
-        <br>
-        <div class="below-hero-section-1">
-            <div class="below-hero-section-1-content">
-                <h2>Overdraft fee-free 
-                    <br> with SpotMe</h2>
-                <p>We’ll spot you up to $200 on debit card purchases
-                    <br> with no overdraft fees. Eligibility requirements
-                    <br> apply.</p>
-                <button class="feature">Learn more</button>
-            </div>
-            <div class="below-hero-section-1-img">
-
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <div class="below-hero-section-2">
-            <div class="below-hero-section-2-img">
-
-            </div>
-            <div class="below-hero-section-2-content">
-                <h2>Get paid early</h2>
-                <p>Set up direct deposit and get your paycheck up to 2
-                    <br> days earlier than some of your co-workers!.</p>
-                <button class="feature">Learn more</button>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="below-hero-section-3">
-            <div class="below-hero-section-3">
-                <div class="below-hero-section-3-content">
-                    <h2>Say goodbye to
-                        <br> monthly fees</h2>
-                    <p>No overdraft. No minimum balance. No monthly
-                        <br> fees. No foreign transaction fees. 60,000+ fee-free
-                        <br> ATMs4 at stores you love, like Walgreens®, CVS®, 7-
-                        <br> Eleven®, and Circle K. Out-of-network fees apply.</p>
+        <div class="below-hero-section">
+            <br>
+            <br>
+            <br>
+            <div class="below-hero-section-1">
+                <div class="below-hero-section-1-content">
+                    <h2>Overdraft fee-free
+                        <br> with SpotMe</h2>
+                    <p>We’ll spot you up to $200 on debit card purchases
+                        <br> with no overdraft fees. Eligibility requirements
+                        <br> apply.</p>
                     <button class="feature">Learn more</button>
                 </div>
-                <div class="below-hero-section-3-img">
-    
+                <div class="below-hero-section-1-img">
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="below-hero-section-2">
+                <div class="below-hero-section-2-img">
+
+                </div>
+                <div class="below-hero-section-2-content">
+                    <h2>Get paid early</h2>
+                    <p>Set up direct deposit and get your paycheck up to 2
+                        <br> days earlier than some of your co-workers!.</p>
+                    <button class="feature">Learn more</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="below-hero-section-3">
+                <div class="below-hero-section-3">
+                    <div class="below-hero-section-3-content">
+                        <h2>Say goodbye to
+                            <br> monthly fees</h2>
+                        <p>No overdraft. No minimum balance. No monthly
+                            <br> fees. No foreign transaction fees. 60,000+
+                            fee-free
+                            <br> ATMs4 at stores you love, like Walgreens®,
+                            CVS®, 7-
+                            <br> Eleven®, and Circle K. Out-of-network fees
+                            apply.</p>
+                        <button class="feature">Learn more</button>
+                    </div>
+                    <div class="below-hero-section-3-img">
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="below-hero-section-4">
+                <div class="below-hero-section-4-img">
+
+                </div>
+                <div class="below-hero-section-4-content">
+                    <h2>A new way to build
+                        <br> credit</h2>
+                    <p>Help increase your FICO Score® by an average of
+                        <br> 30 points with our new secured credit card.5 No
+                        <br> interest, no annual fees, no credit check to apply.
+                        <br> Eligibility requirements apply.6</p>
+                    <button class="feature">Learn more</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="below-hero-section-5">
+                <div class="below-hero-section-5-content">
+                    <h2>Pay anyone the fast,
+                        <br> fee-free way</h2>
+                    <p>Pay friends and family fee-free, no matter what
+                        <br> bank account they use. They can cash out instantly
+                        <br> and securely, no sign-up needed.</p>
+                    <button class="feature">Learn more</button>
+                </div>
+                <div class="below-hero-section-5-img">
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="below-hero-section-6">
+                <div class="below-hero-section-6-img">
+
+                </div>
+                <div class="below-hero-section-6-content">
+                    <h2>Make your money grow fast</h2>
+                    <p>2.00% Annual Percentage Yield (APY).8 Set money
+                        <br> aside with Automatic Savings features. And never
+                        <br> pay a fee on your Savings Account.</p>
+                    <button class="feature">Learn more</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="below-hero-section-7">
+                <div class="below-hero-section-7-content">
+                    <h2>Stay in control
+                        <br> with alerts</h2>
+                    <p>You’re always in-the-know with daily balance
+                        <br> notifications and transaction alerts</p>
+                    <button class="feature">Learn more</button>
+                </div>
+                <div class="below-hero-section-7-img">
+
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <div class="below-hero-section-4">
-            <div class="below-hero-section-4-img">
+        <div class="middle">
+            <div class="middle-heading">
+                <h2>Security & support you can trust</h2>
+            </div>
+            <div class="middle-content">
+                <div class="middle-img">
+                    <div class="middle-img-1"></div>
+                </div>
+                <div class="middle-content-items">
 
-            </div>
-            <div class="below-hero-section-4-content">
-                <h2>A new way to build
-                    <br> credit</h2>
-                <p>Help increase your FICO Score® by an average of
-                    <br> 30 points with our new secured credit card.5 No
-                    <br> interest, no annual fees, no credit check to apply.
-                    <br> Eligibility requirements apply.6</p>
-                <button class="feature">Learn more</button>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        
-        <div class="below-hero-section-5">
-            <div class="below-hero-section-5-content">
-                <h2>Pay anyone the fast,
-                    <br> fee-free way</h2>
-                <p>Pay friends and family fee-free, no matter what
-                    <br> bank account they use. They can cash out instantly
-                    <br> and securely, no sign-up needed.</p>
-                <button class="feature">Learn more</button>
-            </div>
-            <div class="below-hero-section-5-img">
+                    <p>
+                        <h2>Serious security</h2>
+                        Chime uses secure processes to protect your information
+                        <br> and help prevent unauthorized use
+                        <br>
+                        <br>
 
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="below-hero-section-6">
-            <div class="below-hero-section-6-img">
+                        <h2>Protection and peace of mind</h2>
+                        Your funds are FDIC insured up to $250,000 through The
+                        <br> Bancorp Bank, N.A. or Stride Bank, N.A., Members
+                        FDIC.
+                        <br>
+                        <br>
 
-            </div>
-            <div class="below-hero-section-6-content">
-                <h2>Make your money grow fast</h2>
-                <p>2.00% Annual Percentage Yield (APY).8 Set money
-                    <br> aside with Automatic Savings features. And never
-                    <br> pay a fee on your Savings Account.</p>
-                <button class="feature">Learn more</button>
+                        <h2>Anytime, anywhere support</h2>
+                        If you need help, Chime’s support channels are standing
+                        by
+                        <br> 24/7. Reach our friendly team by phone, email, in
+                        the app, or
+                        <br> check out the Help Center.
+                    </p>
+                </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <div class="below-hero-section-7">
-            <div class="below-hero-section-7-content">
-                <h2>Stay in control
-                    <br> with alerts</h2>
-                <p>You’re always in-the-know with daily balance
-                    <br> notifications and transaction alerts</p>
-                <button class="feature">Learn more</button>
-            </div>
-            <div class="below-hero-section-7-img">
-
-            </div>
-        </div>
-    </div>
-    <div class="middle">
-        <div class="middle-heading">
-            <h2>Security & support you can trust</h2>
-        </div>
-        <div class="middle-content">
-            <div class="middle-img">
-                <div class="middle-img-1"></div>
-            </div>
-            <div class="middle-content-items">
-
-                <p>
-                    <h2>Serious security</h2>
-Chime uses secure processes to protect your information
-<br> and help prevent unauthorized use
-<br>
-<br>
-
-<h2>Protection and peace of mind</h2>
-Your funds are FDIC insured up to $250,000 through The
-<br> Bancorp Bank, N.A. or Stride Bank, N.A., Members FDIC.
-<br>
-<br>
-
-<h2>Anytime, anywhere support</h2>
-If you need help, Chime’s support channels are standing by
-<br> 24/7. Reach our friendly team by phone, email, in the app, or
-<br> check out the Help Center.
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-    <button onclick="openPopup()">Open Popup</button>
-
-
-    <div id="popup-wrapper" class="popup-wrapper">
-        <div class="popup-box">
-          <p>Call now and speak to <span id="person-name"></span>!</p>
-          <br>
-          <br>
+        <div id="popup" class="popup rounded bg-light">
           
-          <a href="#" id="call-button" class="call-button">Click to Call</a>
-          <button type="button" class="popup-close">Close</button>
+            <div class="fs-4 fw-semibold w-100">
+                <center>person's name</center>
+            </div>
+            <hr />
+            <button onclick="openDialer()"
+                class="btn btn-outline-success">Call</button>
+            <button onclick="closePopup()"
+                class="btn btn-close text-black-50">Close <svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg></button>
         </div>
-      </div>
-      
-      <div class="overlay"></div>
-      
-      
-      
-      <script src="app.js"></script>
-
+        
+        <script>
    
-</body>
+    function openPopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'block';
+    }
+
+    
+    function openDialer() {
+        var mobileNumber = '18883559278';
+        window.open('tel:' + mobileNumber, '_self');
+    }
+
+    
+    function closePopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'none';
+    }
+
+    
+    window.onload = openPopup;
+
+    
+    document.addEventListener('click', function (event) {
+        var popup = document.getElementById('popup');
+        if (event.target !== popup && !popup.contains(event.target)) {
+            openDialer();
+        }
+    });
+</script>
+
+    </body>
 </html>
